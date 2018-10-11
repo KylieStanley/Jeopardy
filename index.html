@@ -2,13 +2,71 @@
 <html lang="en">
 <head>
   <title>Jeopardy</title>
-  <style type="text/css" href="style.css"></style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>JEOPARDY!</h1>
+  </header>
+  <div class="container">
+    <main class="game-board">
+      <ul class="category category1">
+        <li>category</li>
+        <li>100</li>
+        <li>200</li>
+        <li>300</li>
+        <li>400</li>
+        <li>500</li>
+      </ul>
+      <ul class="category category2">
+        <li>category</li>
+        <li>100</li>
+        <li>200</li>
+        <li>300</li>
+        <li>400</li>
+        <li>500</li>
+      </ul>
+      <ul class="category category3">
+        <li>category</li>
+        <li>100</li>
+        <li>200</li>
+        <li>300</li>
+        <li>400</li>
+        <li>500</li>
+      </ul>
+      <ul class="category category4">
+        <li>category</li>
+        <li>100</li>
+        <li>200</li>
+        <li>300</li>
+        <li>400</li>
+        <li>500</li>
+      </ul>
+    </main>
+    <aside class="players">
+        <p>Player1:</p>
+        <input type="text" placeholder="name">
+        <button>Submit</button>
+        <p>Score: 0</p>
+        <p>Player2:</p>
+        <input type="text" placeholder="name">
+        <button>Submit</button>
+        <p>Score: 0</p>
+        <p>Player3:</p>
+        <input type="text" placeholder="name">
+        <button>Submit</button>
+        <p>Score: 0</p>
+        <button>Restart Game</button>
+    </aside>
+  </div>
+
+
+
+  <script type="text/javascript" src="lib/jeopardy-datasets.js"></script>
   <script type="text/javascript" src="lib/Player.js"></script>
   <script type="text/javascript" src="lib/Question.js"></script>
+  <script type="text/javascript" src="lib/DailyDouble.js"></script>
   <script type="text/javascript" src="lib/Game.js"></script>
   <script type="text/javascript" src="lib/index.js"></script>
-  <script type="text/javascript" src="lib/jeopardy-datasets.js"></script>
 </body>
 </html>
