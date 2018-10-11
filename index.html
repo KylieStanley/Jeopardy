@@ -5,8 +5,21 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
+  <div class="start-screen">
     <h1>JEOPARDY!</h1>
+    <form>
+      <div>
+      <input class="player1" type="text" placeholder="Player1 Name">
+      <input class="player2" type="text" placeholder="Player2 Name">
+      <input class="player3" type="text" placeholder="Player3 Name"> 
+      </div>
+      <button class="start-btn">Start Game</button>  
+    </form>
+  </div>
+
+
+  <header>
+    <h2>JEOPARDY!</h2>
   </header>
   <div class="container">
     <main class="game-board">
@@ -44,17 +57,11 @@
       </ul>
     </main>
     <aside class="players">
-        <p>Player1:</p>
-        <input type="text" placeholder="name">
-        <button>Submit</button>
+        <p class="player">Player1:</p>
         <p>Score: 0</p>
-        <p>Player2:</p>
-        <input type="text" placeholder="name">
-        <button>Submit</button>
+        <p class="player">Player2:</p>
         <p>Score: 0</p>
-        <p>Player3:</p>
-        <input type="text" placeholder="name">
-        <button>Submit</button>
+        <p class="player">Player3:</p>
         <p>Score: 0</p>
         <button>Restart Game</button>
     </aside>
