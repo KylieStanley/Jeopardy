@@ -5,17 +5,21 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+
   <div class="start-screen">
     <h1>JEOPARDY!</h1>
     <form>
       <div>
-      <input class="player1" type="text" placeholder="Player1 Name">
-      <input class="player2" type="text" placeholder="Player2 Name">
-      <input class="player3" type="text" placeholder="Player3 Name"> 
+      <input class="player1-input" type="text" placeholder="Player 1 Name">
+      <input class="player2-input" type="text" placeholder="Player 2 Name">
+      <input class="player3-input" type="text" placeholder="Player 3 Name"> 
       </div>
       <button class="start-btn">Start Game</button>  
     </form>
   </div>
+
+
 
 
   <header>
@@ -56,19 +60,25 @@
         <li>500</li>
       </ul>
     </main>
+
+
     <aside class="players">
-        <p class="player">Player1:</p>
-        <p>Score: 0</p>
-        <p class="player">Player2:</p>
-        <p>Score: 0</p>
-        <p class="player">Player3:</p>
-        <p>Score: 0</p>
+
+        <ul class="scoreboard">
+          
+        </ul>
+      
+
+
         <button>Restart Game</button>
+
+
     </aside>
   </div>
 
 
 
+  <script type="text/javascript" src="lib/domUpdates.js"></script>
   <script type="text/javascript" src="lib/jeopardy-datasets.js"></script>
   <script type="text/javascript" src="lib/Player.js"></script>
   <script type="text/javascript" src="lib/Question.js"></script>
