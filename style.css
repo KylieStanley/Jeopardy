@@ -58,3 +58,7 @@ form {
   justify-content: space-around;
   height: 500px;
 }
+
+.category {
+  text-align: center;
+}
