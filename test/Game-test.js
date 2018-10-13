@@ -30,6 +30,4 @@ describe('hooks', function() {
       expect(game.categories.length).to.equal(4);
     });
   });
-
-
 });
