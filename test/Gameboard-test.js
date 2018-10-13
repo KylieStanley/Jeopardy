@@ -8,10 +8,3 @@ describe('Gameboard', function() {
     expect(gameboard).to.exist;
   });
 });
-
-describe('Gameboard', function() {
-  it('should generate random categories', function() {
-    let gameboard = new Gameboard();
-
-  })
-})

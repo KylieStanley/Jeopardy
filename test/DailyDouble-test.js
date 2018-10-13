@@ -1,4 +1,20 @@
 const chai = require('chai')
 const expect = chai.expect;
-const Game = require('../lib/DailyDouble.js')
+const DailyDouble = require('../lib/DailyDouble.js')
+const Question = require('../lib/Question.js')
 const data = require('../lib/jeopardy-datasets.js')
+
+describe('hooks', function() {
+  let question
+  let dailyDouble;
+  beforeEach(function() {
+    question = new Question();
+    dailyDouble = new DailyDouble();
+  })
+
+  describe('DailyDouble', function() {
+    it('should instantiate a new DailyDouble', function() {
+      expect(dailyDouble).to.exist;
+    });
+  });
+});

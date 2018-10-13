@@ -24,7 +24,7 @@ describe('hooks', function() {
     });
   });
 
- describe('Game', function() {
+  describe('Game', function() {
     it('should have 4 categories', function() {
       game.generateRandomCategories(data);
       expect(game.categories.length).to.equal(4);
