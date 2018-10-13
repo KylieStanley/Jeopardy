@@ -62,3 +62,8 @@ form {
 .category {
   text-align: center;
 }
+
+
+article {
+  flex: 1;
+}
