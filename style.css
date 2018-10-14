@@ -1,28 +1,46 @@
 * {
   box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  margin: 5px;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #0A0896;
 }
 
 h1 {
   font-size: 4em;
   text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 10px;
 }
 
 h2 {
-  text-align: center;
-  font-size: 2em;
-  margin: 20px 0;
+  font-size: 1.6em;
+  margin: 15px;
+}
+
+h3 {
+  margin: 15px;
+
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   flex: 1;
+  margin: 0;
 }
 
 li {
-  /*border: 1px solid black;
+  border: 3px solid black;
   text-align: center;
-  height: 80px;*/
+  line-height: 80px;
 }
 
 form {
@@ -32,7 +50,7 @@ form {
 }
 
 .start-screen {
-  background: lightblue;
+  background-color: #0A0896;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,6 +66,7 @@ form {
 }
 
 .container {
+  background-color: #0A0896;
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 30px;
@@ -56,7 +75,24 @@ form {
 .game-board {
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  height: 600px;
+  border: 3px solid black;
+}
+
+.points {
+  color: #EFA361;
+  font-size: 3rem;  
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 3px #000000;
+}
+
+.player-container {
+  background-color: #2a27e2;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 15px;
 }
 
 .category {
