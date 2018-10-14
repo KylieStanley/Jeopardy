@@ -3,35 +3,29 @@
 <head>
   <title>Jeopardy</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Cabin:600|PT+Sans+Narrow:700" rel="stylesheet">
 </head>
 <body>
-
   <div class="start-screen">
     <h1>JEOPARDY!</h1>
     <form>
       <div>
-      <input class="player1-input" type="text" placeholder="Player 1 Name">
-      <input class="player2-input" type="text" placeholder="Player 2 Name">
-      <input class="player3-input" type="text" placeholder="Player 3 Name"> 
+      <input aria-label="input for player one" class="player1-input" type="text" placeholder="Player 1 Name">
+      <input aria-label="input for player one" class="player2-input" type="text" placeholder="Player 2 Name">
+      <input aria-label="input for player one" class="player3-input" type="text" placeholder="Player 3 Name"> 
       </div>
       <button class="start-btn">Start Game</button>  
     </form>
   </div>
-
-  <header>
-    <h2>JEOPARDY!</h2>
-  </header>
-
   <div class="container">
     <main class="game-board">
     </main>
-    <aside class="players">
-      <ul class="scoreboard">
-      </ul>
+    <aside>
+    <div class="scoreboard">
+    </div>
       <button>Restart Game</button>
     </aside>
   </div>
-
 
   <script type="text/javascript" src="lib/jeopardy-datasets.js"></script>
   <script type="text/javascript" src="lib/domUpdates.js"></script>

@@ -1,43 +1,80 @@
 * {
   box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 4em;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 6rem;
+  margin: 10px;
   text-align: center;
 }
 
 h2 {
-  text-align: center;
-  font-size: 3em;
-  margin: 20px 0;
+  font-size: 1.6em;
+  margin: 15px;
+}
+
+h3 {
+  margin: 15px;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  /*border: 1px solid black;
+  align-items: center;
+  border: 3px solid black;
+  display: flex;
+  flex: 1;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 0 10px;
   text-align: center;
-  height: 80px;*/
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+aside {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+button {
+  border-radius: 7px;
+  box-shadow: 0 0 4px 0 black;
+  color: black; 
+  font-size: 1rem;
+  margin: 15px auto;
+  padding: 10px;
 }
 
 .start-screen {
-  background: lightblue;
+  background-color: #0A0896;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
-  margin: auto;
+  justify-content: center;
   position: absolute;
   width: 100%;
 }
@@ -47,23 +84,39 @@ form {
 
 }
 
+.hide {
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
 .container {
+  background-color: #0A0896;
   display: grid;
-  grid-template-columns: 4fr 1fr;
   grid-gap: 30px;
+  grid-template-columns: 4fr 1fr;
+  height: 100vh;
 }
 
 .game-board {
+  border: 3px solid black;
   display: flex;
   justify-content: space-around;
-  height: 500px;
+  margin: 10px;
 }
 
-.category {
-  text-align: center;
+.points {
+  color: #EFA361;
+  font-family: 'Anton', sans-serif;
+  font-size: 3.5rem;  
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 3px #000000;
 }
 
-
-article {
-  flex: 1;
+.player-container {
+  background-color: #1816ab;
+  border-radius: 10px;
+  border: 1px solid #2a27e2;
+  box-shadow: 0px 5px 10px #010035;
+  margin: 15px;
+  padding-left: 10px;
 }
