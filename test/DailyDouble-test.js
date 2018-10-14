@@ -5,11 +5,11 @@ global.Question = require('../lib/Question.js')
 const data = require('../lib/jeopardy-datasets.js')
 
 describe('hooks', function() {
-  let question
+  // let question
   let dailyDouble;
   beforeEach(function() {
-    question = new Question();
-    dailyDouble = new DailyDouble();
+    // question = new Question();
+    dailyDouble = new DailyDouble(data.clues[0]);
   })
 
 

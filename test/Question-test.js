@@ -1,12 +1,12 @@
 const chai = require('chai')
 const expect = chai.expect;
-global.Question = require('../lib/Question.js')
+const Question = require('../lib/Question.js')
 const data = require('../lib/jeopardy-datasets.js')
 
 describe('hooks', function() {
   let question;
   beforeEach(function() {
-    question = new Question();
+    question = new Question(data.clues[0]);
   })
 
   describe('Question', function() {
