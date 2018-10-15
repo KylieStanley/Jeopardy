@@ -10,7 +10,6 @@ describe('hooks', function() {
     dailyDouble = new DailyDouble(data.clues[0]);
   })
 
-
   describe('DailyDouble', function() {
     it('should instantiate a new DailyDouble', function() {
       expect(dailyDouble).to.exist;

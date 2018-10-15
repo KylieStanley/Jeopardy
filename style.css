@@ -84,6 +84,13 @@ button {
   width: 100%;
 }
 
+.transparent-container {
+  height: 100%;
+  width: 100%; 
+  z-index: -1;
+  position: absolute;
+}
+
 .card {
   background-color: #0a0896;
   border: 21px solid #efa361;
