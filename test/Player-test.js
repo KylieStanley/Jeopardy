@@ -19,28 +19,14 @@ describe('hooks', function() {
       expect(player).to.exist;
     });
 
-    it('should be able to submit an answer', function() {
-      // expect method to exist;
-    });
-
-    it('should submit answer as a string', function() {
-      //expect answer value to be a string
-      // typeOf === String
-    });
-
-    it('should be able to submit an wager', function() {
-      
-    });
-
     it('should have score updated if answer is correct', function() {
-      //player.score = 0
-      //updateScore()
-      //player.score > 0 
+      player.updateScore(100)
+      expect(player.score).to.equal(100);
     });
 
     it('should update the scoreboard if answered correctly', function() {
       player.updateScore(100)
-        expect(domUpdates.updateScoreboard).to.have.been.called(1)
+        expect(domUpdates.updateScoreboard).to.have.been.called(2)
     });
   });
 });
