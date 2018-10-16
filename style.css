@@ -104,6 +104,11 @@ button {
   z-index: -1;
 }
 
+.daily-double {
+  font-size: 3rem;
+  text-shadow: 6px 5px 8px #00000094;
+}
+
 .current-question {
   text-align: center;
   font-size: 1.4rem;
