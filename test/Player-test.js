@@ -3,10 +3,10 @@ const spies = require('chai-spies')
 chai.use(spies);
 const expect = chai.expect;
 
-const Player = require('../lib/Player.js')
-// const data = require('../lib/jeopardy-datasets.js')
+global.Player = require('../lib/Player.js')
+global.domUpdates = require('../lib/domUpdates.js')
 
-chai.spy.on(global.domUpdates, ['updateScoreboard'], () => true);
+chai.spy.on(global.domUpdates, ['updateScoreboard', 'returnAnswerStatus'], () => true);
 
 describe('hooks', function() {
   let player;
@@ -19,14 +19,19 @@ describe('hooks', function() {
       expect(player).to.exist;
     });
 
-    it('should have score updated if answer is correct', function() {
-      player.updateScore(100)
+    it('should have score increased if answer is correct', function() {
+      player.updateScore(100, true)
       expect(player.score).to.equal(100);
     });
 
-    it('should update the scoreboard if answered correctly', function() {
-      player.updateScore(100)
-      expect(domUpdates.updateScoreboard).to.have.been.called(2)
+    it('should have score decreased if answer is correct', function() {
+      player.updateScore(100, false)
+      expect(player.score).to.equal(-100);
+    });
+
+    it('should update the scoreboard when answered', function() {
+      player.updateScore(100, true)
+      expect(domUpdates.updateScoreboard).to.have.been.called(3)
     });
   });
 });
