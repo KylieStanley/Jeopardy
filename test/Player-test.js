@@ -6,7 +6,8 @@ const expect = chai.expect;
 global.Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
-chai.spy.on(global.domUpdates, ['updateScoreboard', 'returnAnswerStatus'], () => true);
+chai.spy.on(global.domUpdates, 
+  ['updateScoreboard', 'returnAnswerStatus'], () => true);
 
 describe('hooks', function() {
   let player;
