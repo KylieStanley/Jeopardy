@@ -10,7 +10,8 @@ global.Player = require('../lib/Player.js')
 global.data = require('../lib/jeopardy-datasets.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
-chai.spy.on(global.domUpdates, ['renderScoreboard', 'renderGameboard'], () => true);
+chai.spy.on(global.domUpdates, 
+  ['renderScoreboard', 'renderGameboard'], () => true);
 
 describe('hooks', function() {
   let game;
