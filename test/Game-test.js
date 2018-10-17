@@ -36,8 +36,8 @@ describe('hooks', function() {
 
     it('should set up players and board', function() {
       game.setUpGame()
-        expect(domUpdates.renderScoreboard).to.have.been.called(1)
-        expect(domUpdates.renderGameboard).to.have.been.called(1)
+      expect(domUpdates.renderScoreboard).to.have.been.called(1)
+      expect(domUpdates.renderGameboard).to.have.been.called(1)
     })
   })
 

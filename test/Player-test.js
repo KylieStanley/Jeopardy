@@ -4,7 +4,7 @@ chai.use(spies);
 const expect = chai.expect;
 
 const Player = require('../lib/Player.js')
-const data = require('../lib/jeopardy-datasets.js')
+// const data = require('../lib/jeopardy-datasets.js')
 
 chai.spy.on(global.domUpdates, ['updateScoreboard'], () => true);
 
@@ -26,7 +26,7 @@ describe('hooks', function() {
 
     it('should update the scoreboard if answered correctly', function() {
       player.updateScore(100)
-        expect(domUpdates.updateScoreboard).to.have.been.called(2)
+      expect(domUpdates.updateScoreboard).to.have.been.called(2)
     });
   });
 });
