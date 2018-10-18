@@ -82,10 +82,16 @@ button {
   position: absolute;
 }
 
-.start-screen {
+.start-screen,
+.round-screen {
   background-color: #0A0896;
   height: 100%;
   width: 100%;
+}
+
+.new-round {
+  z-index: -1;
+  animation: move 2.5s 1 2s 1 alternate;
 }
 
 .transparent-container {
@@ -184,4 +190,8 @@ button {
   font-size: 2.5rem;
   text-align: center;
   height: 100%;
+}
+
+.highlight {
+  box-shadow: 0px 1px 14px 2px #fba052;
 }

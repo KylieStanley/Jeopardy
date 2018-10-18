@@ -9,8 +9,8 @@ global.DailyDouble = require('../lib/DailyDouble.js')
 const Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
-chai.spy.on(global.domUpdates, 
-  ['renderScoreboard', 'renderGameboard', 'changeRoundDisplay'], () => true);
+chai.spy.on(global.domUpdates, ['renderScoreboard', 'renderGameboard', 
+  'changeRoundDisplay', 'highlightPlayer'], () => true);
 
 describe('hooks', function() {
   let game;
