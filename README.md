@@ -1,4 +1,6 @@
 # Jeopardy
+
+Jeopardy is a three player trivia game in which each player takes a turn to answer a question correct. Points are awarded based on the point value of the question answered. If you get lucky, you may even find the hidden daily double!
  
 ![image](https://user-images.githubusercontent.com/37158924/47162476-4268aa00-d2b1-11e8-9edc-731eed40822b.png)
 
