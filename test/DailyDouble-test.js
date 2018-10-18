@@ -6,7 +6,7 @@ const expect = chai.expect;
 global.Game = require('../lib/Game.js')
 global.Question = require('../lib/Question.js')
 const DailyDouble = require('../lib/DailyDouble.js')
-const Player = require('../lib/Player.js')
+global.Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 const data = require('../lib/jeopardy-datasets.js')
 

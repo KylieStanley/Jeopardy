@@ -4,10 +4,9 @@ chai.use(spies);
 const expect = chai.expect;
 
 const Game = require('../lib/Game.js')
-global.Question = require('../lib/Question.js')
+const Question = require('../lib/Question.js')
 global.DailyDouble = require('../lib/DailyDouble.js')
-global.Player = require('../lib/Player.js')
-global.data = require('../lib/jeopardy-datasets.js')
+const Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
 chai.spy.on(global.domUpdates, 

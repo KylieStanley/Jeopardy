@@ -3,6 +3,7 @@ const spies = require('chai-spies')
 chai.use(spies);
 const expect = chai.expect;
 
+global.Game = require('../lib/Game.js')
 global.Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
@@ -10,8 +11,10 @@ chai.spy.on(global.domUpdates,
   ['updateScoreboard', 'returnAnswerStatus'], () => true);
 
 describe('hooks', function() {
+  let game;
   let player;
   beforeEach(function() {
+    game = new Game();
     player = new Player('player1');
   })
 
