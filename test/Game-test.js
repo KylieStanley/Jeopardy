@@ -31,6 +31,7 @@ describe('hooks', function() {
     });
 
     it('should set up players and board', function() {
+      //modify it statement
       game.setUpGame()
       expect(domUpdates.renderScoreboard).to.have.been.called(1)
       expect(domUpdates.renderGameboard).to.have.been.called(1)
@@ -48,6 +49,7 @@ describe('hooks', function() {
     });
 
     it('should know which player\'s turn it is', function() {
+      //should update players turn when called
       expect(game.playerTurn).to.equal(0)
       game.changeTurn()
       expect(game.playerTurn).to.equal(1)

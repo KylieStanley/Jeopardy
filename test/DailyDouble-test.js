@@ -33,7 +33,7 @@ describe('hooks', function() {
     });
 
     it('should hide the card when answered', function() {
-      expect(domUpdates.hideCardOptions).to.have.been.called(1)
+      expect(domUpdates.hideCardOptions).to.have.been.called(1);
     });
   });
 });
