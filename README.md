@@ -1,5 +1,7 @@
 # Jeopardy
  
+![image](https://user-images.githubusercontent.com/37158924/47162476-4268aa00-d2b1-11e8-9edc-731eed40822b.png)
+
 ## Set Up
 
 Clone down this repo
