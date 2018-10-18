@@ -10,7 +10,7 @@ const Player = require('../lib/Player.js')
 global.domUpdates = require('../lib/domUpdates.js')
 
 chai.spy.on(global.domUpdates, 
-  ['renderScoreboard', 'renderGameboard'], () => true);
+  ['renderScoreboard', 'renderGameboard', 'changeRoundDisplay'], () => true);
 
 describe('hooks', function() {
   let game;
