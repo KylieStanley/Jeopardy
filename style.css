@@ -82,16 +82,21 @@ button {
   position: absolute;
 }
 
-.start-screen,
-.round-screen {
+.start-screen {
   background-color: #0A0896;
   height: 100%;
   width: 100%;
 }
 
-.new-round {
+.round-screen {
+  background-color: #0A0896;
+  height: 100%;
+  width: 100%;
   z-index: -1;
-  animation: move 2.5s 1 2s 1 alternate;
+}
+
+.new-round {
+  animation: move 2.5s 1 0s alternate;
 }
 
 .transparent-container {
