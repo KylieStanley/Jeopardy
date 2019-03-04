@@ -12,7 +12,7 @@ Clone down this repo
   git clone git@github.com:KylieStanley/Jeopardy.git
 ```
 
-Change into Jeopardy directory
+cd into Jeopardy directory
   
 ```shell
   npm install
@@ -30,6 +30,6 @@ npm test
 ## Author
 * Kylie Stanley
 
-## Link to DTR and Wireframe:  
-https://gist.github.com/brandido/d6b6e846413f874649ab1d9fbb21dbc8
+## Link to Wireframe:  
+
 https://github.com/KylieStanley/Jeopardy/issues/25#issue-371346405
